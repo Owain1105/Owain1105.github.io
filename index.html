@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightBlog</title>
+</head>
+<body>
+    <header>
+        <!-- the content of the header goes here -->
+        <h1 id="logo">BrightBlog</h1>
+        <nav>
+            <ul id="nav-ul">
+                <li>
+                    <a href="" class="navbutton">Home</a>
+                </li>
+                <li>
+                    <a href="" class="navbutton">About Us</a>
+                </li>
+                <li>
+                    <a href="" class="navbutton">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- main content of the website goes here -->
+        <div id="main-content">
+            <aside>
+                <section>
+                    <h4>Filter by Month</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="">Filter for Name</a></li>
+                            <li><a href="">Filter for Age</a></li>
+                            <li><a href="">Filter for Season</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <section>
+                    <h4>Filter by Category</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="">Goalkeeper</a></li>
+                            <li><a href="">Defence</a></li>
+                            <li><a href="">Midfield</a></li>
+                            <li><a href="">Attack</a></li>
+                        </ul>
+                    </nav>
+    
+                </section>
+            </aside>
+            
+            <div>
+                <article>
+                    <header>
+                        <!-- Article's header goes here -->
+                        <h2>10 Current Everton Players</h2>
+                        <h3>Read Time: 5 minutes</h3>
+                    </header>
+                    <main>
+                        <!-- Article's Text goes here -->
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, fugiat architecto exercitationem voluptatibus, vero repellendus deserunt, deleniti asperiores in quidem eum dolorum. Esse beatae dolore tempora voluptate accusantium quod error!
+                        </p>
+                        <blockquote>
+                            <cite>"Everton" - Everton, 2024</cite>
+                        </blockquote>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt suscipit, harum commodi impedit distinctio delectus excepturi! Quia blanditiis, nisi sint illo quidem error reprehenderit dolore culpa? Adipisci quisquam repellat omnis unde! Sint inventore porro atque ducimus ratione earum voluptas doloribus ut ad! Aliquam pariatur dolore quam assumenda iste. Maxime sit libero ipsa amet nihil. Harum repellat sunt doloribus laboriosam rerum sit dolor odit cupiditate libero, laudantium consequuntur amet quaerat, incidunt, delectus odio modi deserunt voluptatum possimus tempore ad. Ab saepe ipsa numquam animi est ipsam tenetur velit repellendus explicabo corporis officiis cupiditate hic maxime atque quod aperiam, odio asperiores illo quo alias omnis. Vero possimus commodi maiores esse, adipisci impedit facilis quidem a eligendi nostrum asperiores? Amet exercitationem vel accusamus minus culpa in aperiam quasi odit dicta. Vel cupiditate sed incidunt quidem minus molestias nihil animi officiis magni, tempore fuga velit consequatur. Id tempora sit ea modi facilis vero laudantium?
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis atque laborum aut architecto natus sit minus mollitia numquam explicabo inventore nostrum dignissimos eum veritatis ducimus vero nihil ut magni quidem cumque, distinctio in nisi iusto est illo. Saepe laudantium error facilis asperiores eum aspernatur odio officia tempore delectus nam, ad molestiae voluptatum blanditiis, nobis harum qui rem magnam deserunt aliquam soluta commodi exercitationem. Neque dignissimos incidunt at tenetur modi eos beatae accusamus, eligendi provident, iure ex ducimus doloremque cumque nisi?
+                        </p>
+                    </main>
+                    <footer>
+                        <!-- Article's Footer goes here -->
+                        <img src="https://placebear.com/250/150" alt="Picture of a Bear">
+                        <h3>AUTHOR: Everton</h3>
+                        <h3>Last Posted: 25-08-24</h3>
+                        <a href="https://www.evertonfc.com/" target="_blank">Everton Homepage</a>
+                    </footer>
+                </article>
+            </div>
+        </div>
+
+        <hr>
+        <h2>Sign up for out newsletter!</h2>
+        <form action="">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+
+            <label for="favourite_player">Favourite Player:</label>
+            <input type="radio" name="favourite_player" id="player_1" value="player_1">
+            <label for="player_1">Player 1</label>
+            <input type="radio" name="favourite_player" id="player_2" value="player_2">
+            <label for="player_2">Player 2</label>
+            <input type="radio" name="favourite_player" id="player_3" value="player_3">
+            <label for="player_3">Player 3</label>
+            <br>
+
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="england">England</option>
+                <option value="wales">Wales</option>
+                <option value="scotland">Scotland</option>
+                <option value="northern_ir">Northern Ireland</option>
+            </select>
+            <br>
+
+            <label for="bio">Biography:</label>
+            <textarea name="bio" id="bio" cols="70" rows="10"></textarea>
+            <br>
+
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe to the newsletter</label>
+            <br>
+
+            <input type="submit" value="submit">
+        </form>
+    </main>
+
+    <footer>
+        <!-- Footer goes here -->
+        <hr>
+        <h2>BrightBlogSite</h2>
+        <section>
+            <nav>
+                <ul id="footer-ul">
+                    <div>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Careers</a></li>
+                    </div>
+                    <div>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Cookie Policy</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+
+</body>
+</html>
