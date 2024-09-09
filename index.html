@@ -1,165 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
-rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightBlog</title>
+    <title>GB Home Sales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- navigation bar -->
     <header>
-        <!-- the content of the header goes here -->
-        <h1 id="logo">BrightBlog</h1>
-        <nav>
-            <ul id="nav-ul">
-                <li>
-                    <a href="" class="navbutton">Home</a>
-                </li>
-                <li>
-                    <a href="" class="navbutton">About Us</a>
-                </li>
-                <li>
-                    <a href="" class="navbutton">Contact</a>
-                </li>
+        <nav aria-label="Main navigation">
+            <div class="logo">
+                <h1>GB Home Sales</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#listings">Listings</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- main content of the website goes here -->
-        <div id="main-content">
-            <aside>
-                <section>
-                    <h4>Filter by Month</h4>
-                    <nav>
-                        <ul>
-                            <li><a href="">Filter for Name</a></li>
-                            <li><a href="">Filter for Age</a></li>
-                            <li><a href="">Filter for Season</a></li>
-                        </ul>
-                    </nav>
-                </section>
-                <section>
-                    <h4>Filter by Category</h4>
-                    <nav>
-                        <ul>
-                            <li><a href="">Goalkeeper</a></li>
-                            <li><a href="">Defence</a></li>
-                            <li><a href="">Midfield</a></li>
-                            <li><a href="">Attack</a></li>
-                        </ul>
-                    </nav>
-    
-                </section>
-            </aside>
-            
-            <div>
-                <article>
-                    <header>
-                        <!-- Article's header goes here -->
-                        <h2>Current Everton Players</h2>
-                        <h3>Read Time: 15 minutes</h3>
-                    </header>
-                    <main>
-                        <!-- Article's Text goes here -->
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, fugiat architecto exercitationem voluptatibus, vero repellendus deserunt, deleniti asperiores in quidem eum dolorum. Esse beatae dolore tempora voluptate accusantium quod error!
-                        </p>
-                        <blockquote>
-                            <cite>"Everton" - Everton, 2024</cite>
-                        </blockquote>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt suscipit, harum commodi impedit distinctio delectus excepturi! Quia blanditiis, nisi sint illo quidem error reprehenderit dolore culpa? Adipisci quisquam repellat omnis unde! Sint inventore porro atque ducimus ratione earum voluptas doloribus ut ad! Aliquam pariatur dolore quam assumenda iste. Maxime sit libero ipsa amet nihil. Harum repellat sunt doloribus laboriosam rerum sit dolor odit cupiditate libero, laudantium consequuntur amet quaerat, incidunt, delectus odio modi deserunt voluptatum possimus tempore ad. Ab saepe ipsa numquam animi est ipsam tenetur velit repellendus explicabo corporis officiis cupiditate hic maxime atque quod aperiam, odio asperiores illo quo alias omnis. Vero possimus commodi maiores esse, adipisci impedit facilis quidem a eligendi nostrum asperiores? Amet exercitationem vel accusamus minus culpa in aperiam quasi odit dicta. Vel cupiditate sed incidunt quidem minus molestias nihil animi officiis magni, tempore fuga velit consequatur. Id tempora sit ea modi facilis vero laudantium?
-                        </p>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis atque laborum aut architecto natus sit minus mollitia numquam explicabo inventore nostrum dignissimos eum veritatis ducimus vero nihil ut magni quidem cumque, distinctio in nisi iusto est illo. Saepe laudantium error facilis asperiores eum aspernatur odio officia tempore delectus nam, ad molestiae voluptatum blanditiis, nobis harum qui rem magnam deserunt aliquam soluta commodi exercitationem. Neque dignissimos incidunt at tenetur modi eos beatae accusamus, eligendi provident, iure ex ducimus doloremque cumque nisi?
-                        </p>
-                    </main>
-                    <footer>
-                        <!-- Article's Footer goes here -->
-                        <img src="https://placebear.com/250/150" alt="Picture of a Bear">
-                        <h3>AUTHOR: Everton</h3>
-                        <h3>Last Posted: 25-08-24</h3>
-                        <a href="https://www.evertonfc.com/" target="_blank">Everton Homepage</a>
-                    </footer>
-                </article>
-            </div>
+    <!-- Home -->
+    <section id="home" class="home" role="banner" aria-labelledby="home-heading">
+        <img src="home-background.jpg" alt="A beautiful house and landscape" class="home-image">
+        <div class="home-text">
+            <h2 id="home-heading">Find Your Dream Home</h2>
+            <p>Explore the best properties available for sale</p>
         </div>
+    </section>
 
-        <hr>
-        <h2>Sign up for out newsletter!</h2>
-        <form action="">
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name" required>
-            <br>
+    <!-- House listings -->
+    <section id="listings" class="house-listings" aria-labelledby="listings-heading">
+        <h2 id="listings-heading">Available Houses</h2>
 
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name" required>
-            <br>
+        <!-- Listing 1 -->
+        <article class="house" aria-labelledby="house1-title">
+            <img src="house1.jpg" alt="Rural Farmhouse" loading="lazy">
+            <div class="house-details">
+                <h3 id="house1-title">Rural Farmhouse</h3>
+                <p>Price: £900,000</p>
+                <a href="#" class="btn">Schedule Viewing</a>
+            </div>
+        </article>
 
-            <label for="email">Email:</label>
+        <!-- Listing 2 -->
+        <article class="house" aria-labelledby="house2-title">
+            <img src="house2.jpg" alt="London Home" loading="lazy">
+            <div class="house-details">
+                <h3 id="house2-title">London Home</h3>
+                <p>Price: £850,000</p>
+                <a href="#" class="btn">Schedule Viewing</a>
+            </div>
+        </article>
+
+        <!-- Listing 3 -->
+        <article class="house" aria-labelledby="house3-title">
+            <img src="house3.jpg" alt="Cozy Cottage" loading="lazy">
+            <div class="house-details">
+                <h3 id="house3-title">Cozy Cottage</h3>
+                <p>Price: £300,000</p>
+                <a href="#" class="btn">Schedule Viewing</a>
+            </div>
+        </article>
+
+        <!-- Listing 4 -->
+        <article class="house" aria-labelledby="house4-title">
+            <img src="house4.jpg" alt="Suburban Home" loading="lazy">
+            <div class="house-details">
+                <h3 id="house4-title">Suburban Home</h3>
+                <p>Price: £450,000</p>
+                <a href="#" class="btn">Schedule Viewing</a>
+            </div>
+        </article>
+
+        <!-- Listing 5 -->
+        <article class="house" aria-labelledby="house5-title">
+            <img src="house5.jpg" alt="Country Estate" loading="lazy">
+            <div class="house-details">
+                <h3 id="house5-title">Country Estate</h3>
+                <p>Price: £2,000,000</p>
+                <a href="#" class="btn">Schedule Viewing</a>
+            </div>
+        </article>
+
+        <!-- Listing 6 -->
+        <article class="house" aria-labelledby="house6-title">
+            <img src="house6.jpg" alt="Modern Family Home" loading="lazy">
+            <div class="house-details">
+                <h3 id="house6-title">Modern Family Home</h3>
+                <p>Price: £200,000</p>
+                <a href="#" class="btn">Schedule Viewing</a>
+            </div>
+        </article>
+
+        <!-- Listing 7 -->
+        <article class="house" aria-labelledby="house7-title">
+            <img src="house7.jpg" alt="Modern Family Home" loading="lazy">
+            <div class="house-details">
+                <h3 id="house7-title">Modern Family Home</h3>
+                <p>Price: £700,000</p>
+                <a href="#" class="btn">Schedule Viewing</a>
+            </div>
+        </article>
+
+        <!-- Listing 8 -->
+        <article class="house" aria-labelledby="house8-title">
+            <img src="house8.jpg" alt="Modern Family Home" loading="lazy">
+            <div class="house-details">
+                <h3 id="house8-title">Modern Family Home</h3>
+                <p>Price: £700,000</p>
+                <a href="#" class="btn">Schedule Viewing</a>
+            </div>
+        </article>
+
+        <!-- Listing 9 -->
+        <article class="house" aria-labelledby="house9-title">
+            <img src="house9.jpg" alt="City Townhouse" loading="lazy">
+            <div class="house-details">
+                <h3 id="house9-title">City Townhouse</h3>
+                <p>Price: £1,500,000</p>
+                <a href="#" class="btn">Schedule Viewing</a>
+            </div>
+        </article>
+
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about-us" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Us</h2>
+        <p>GB Home Sales is dedicated to connecting home buyers with their perfect property. We have helped thousands of clients find homes that match their lifestyle and budget. Our expert team of real estate agents understands the market inside out and provides personalized service to ensure you find your dream home.</p>
+        <p>Our mission is simple: to make the home-buying process as easy and stress-free as possible. We pride ourselves on our professional, ethical, and transparent approach, and committed to helping you every step of the way.</p>
+        <p>Why Choose Us?</p>
+        <ul>
+            <li>Over 1,000 home sales each year</li>
+            <li>A dedicated team of agents in multiple cities</li>
+            <li>Tailored property recommendations based on your preferences</li>
+            <li>Market insights and home valuation services</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Us</h2>
+        <p>If you have any questions or would like more information about a property, feel free to reach out to us. We’re here to help!</p>
+
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
             <input type="email" id="email" name="email" required>
-            <br>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-            <label for="favourite_player">Favourite Player:</label>
-            <input type="radio" name="favourite_player" id="player_1" value="player_1">
-            <label for="player_1">Player 1</label>
-            <input type="radio" name="favourite_player" id="player_2" value="player_2">
-            <label for="player_2">Player 2</label>
-            <input type="radio" name="favourite_player" id="player_3" value="player_3">
-            <label for="player_3">Player 3</label>
-            <br>
-
-            <label for="country">Country:</label>
-            <select name="country" id="country">
-                <option value="england">England</option>
-                <option value="wales">Wales</option>
-                <option value="scotland">Scotland</option>
-                <option value="northern_ir">Northern Ireland</option>
-            </select>
-            <br>
-
-            <label for="bio">Biography:</label>
-            <textarea name="bio" id="bio" cols="70" rows="10"></textarea>
-            <br>
-
-            <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">Subscribe to the newsletter</label>
-            <br>
-
-            <input type="submit" value="submit">
+            <button type="submit" class="btn">Send Message</button>
         </form>
-    </main>
+        
+        <p>Alternatively, you can contact us via phone or email:</p>
+        <p>Email: <a href="mailto:info@gbhomesales.com">info@gbhomesales.com</a></p>
+        <p>Phone: <strong>+44 20 7946 0958</strong></p>
+    </section>
 
-    <footer>
-        <!-- Footer goes here -->
-        <hr>
-        <h2>BrightBlogSite</h2>
-        <section>
-            <nav>
-                <ul id="footer-ul">
-                    <div>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Careers</a></li>
-                    </div>
-                    <div>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms and Conditions</a></li>
-                        <li><a href="">Cookie Policy</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </section>
+    <!-- Footer -->
+    <footer role="contentinfo" aria-label="Footer">
+        <p>&copy; 2024 GB Home Sales | <a href="#contact">Contact Us</a></p>
+        <p>Call us: <strong>+44 20 7946 0958</strong></p>
     </footer>
 
 </body>
